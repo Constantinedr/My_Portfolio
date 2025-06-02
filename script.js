@@ -1,10 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialize project content as collapsed
+  const projectContents = document.querySelectorAll('.project-content');
+  const projectToggleButtons = document.querySelectorAll('.project-toggle-button');
+  
+  projectContents.forEach(content => {
+    content.classList.add('collapsed');
+    content.style.maxHeight = '0';
+  });
+  
+  projectToggleButtons.forEach(button => {
+    button.classList.add('collapsed');
+  });
+
+  // Section toggle functionality
   const toggleButtons = document.querySelectorAll('.toggle-button');
   toggleButtons.forEach(button => {
     button.addEventListener('click', () => {
       const sectionContent = button.closest('section').querySelector('.section-content');
-      const icon = button.querySelector('i');
-      
       sectionContent.classList.toggle('collapsed');
       button.classList.toggle('collapsed');
       
@@ -16,13 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const projectToggleButtons = document.querySelectorAll('.project-toggle-button');
+  // Project toggle functionality
   projectToggleButtons.forEach(button => {
     button.addEventListener('click', (event) => {
       event.preventDefault();
       const projectContent = button.closest('.project').querySelector('.project-content');
-      const icon = button.querySelector('i');
-      
       projectContent.classList.toggle('collapsed');
       button.classList.toggle('collapsed');
       
