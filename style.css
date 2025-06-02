@@ -161,17 +161,7 @@ section.collapsible:nth-child(3) .section-content {
   padding-right: 12px;
   box-sizing: border-box;
 }
-section.collapsible:nth-child(3) .section-content::-webkit-scrollbar {
-  width: 10px;
-}
-section.collapsible:nth-child(3) .section-content::-webkit-scrollbar-track {
-  background: #21262d;
-  border-radius: 5px;
-}
-section.collapsible:nth-child(3) .section-content::-webkit-scrollbar-thumb {
-  background: #58a6ff;
-  border-radius: 5px;
-}
+
 section.collapsible:nth-child(3) .section-content.collapsed {
   max-height: 0;
   overflow-y: hidden;
@@ -196,7 +186,7 @@ section.collapsible:nth-child(3) .section-content.collapsed {
   transform: rotate(-90deg);
 }
 .project-content {
-  max-height: 1000px;
+  max-height: none;
   overflow: hidden;
   transition: max-height 0.3s ease, opacity 0.3s ease;
   opacity: 1;
