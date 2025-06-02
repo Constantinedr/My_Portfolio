@@ -154,7 +154,6 @@ a:hover {
 }
 section.collapsible:nth-child(3) .section-content {
   max-height: 200px;
-  min-height: 100px;
   overflow-y: scroll;
   padding-right: 12px;
   box-sizing: border-box;
