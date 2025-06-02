@@ -90,3 +90,10 @@ ul li {
   color: #58a6ff;
   margin-bottom: 0.5rem;
 }
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
