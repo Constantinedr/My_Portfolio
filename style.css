@@ -7,7 +7,7 @@ body {
   color: #c9d1d9;
 }
 .container {
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
   background: #161b22;
   padding: 2.5rem;
@@ -67,18 +67,25 @@ a:hover {
   text-decoration: underline;
 }
 
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .project {
   background: #21262d;
   border: 1px solid #30363d;
   border-radius: 8px;
   padding: 1rem;
   margin-top: 1rem;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
-.project:hover {
+.project-link:hover .project {
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+  background: #2a3038;
 }
 
 .project-details {
