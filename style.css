@@ -156,12 +156,9 @@ section.collapsible:nth-child(3) .section-content {
   max-height: 200px;
   min-height: 100px;
   overflow-y: scroll;
-  scrollbar-width: thin;
-  scrollbar-color: #58a6ff #21262d;
   padding-right: 12px;
   box-sizing: border-box;
 }
-
 section.collapsible:nth-child(3) .section-content.collapsed {
   max-height: 0;
   overflow-y: hidden;
@@ -203,8 +200,5 @@ section.collapsible:nth-child(3) .section-content.collapsed {
     max-height: 150px;
     min-height: 80px;
     padding-right: 10px;
-  }
-  section.collapsible:nth-child(3) .section-content::-webkit-scrollbar {
-    width: 8px;
   }
 }
