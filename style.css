@@ -176,13 +176,28 @@ a:hover {
 }
 
 section.collapsible:nth-child(3) .section-content {
-  max-height: 400px;
+  max-height: 500px; 
   overflow-y: auto; 
+  scrollbar-width: thin; 
+  scrollbar-color: #58a6ff #21262d; 
+}
+
+section.collapsible:nth-child(3) .section-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+section.collapsible:nth-child(3) .section-content::-webkit-scrollbar-track {
+  background: #21262d;
+}
+
+section.collapsible:nth-child(3) .section-content::-webkit-scrollbar-thumb {
+  background: #58a6ff;
+  border-radius: 4px;
 }
 
 section.collapsible:nth-child(3) .section-content.collapsed {
   max-height: 0;
-  overflow-y: hidden; 
+  overflow-y: hidden;
 }
 
 .project-toggle-button {
@@ -226,6 +241,6 @@ section.collapsible:nth-child(3) .section-content.collapsed {
   }
 
   section.collapsible:nth-child(3) .section-content {
-    max-height: 300px;
+    max-height: 250px; 
   }
 }
