@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize project content as collapsed
+
   const projectContents = document.querySelectorAll('.project-content');
   const projectToggleButtons = document.querySelectorAll('.project-toggle-button');
   
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     button.classList.add('collapsed');
   });
 
-  // Section toggle functionality
+
   const toggleButtons = document.querySelectorAll('.toggle-button');
   toggleButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Project toggle functionality
   projectToggleButtons.forEach(button => {
     button.addEventListener('click', (event) => {
       event.preventDefault();
