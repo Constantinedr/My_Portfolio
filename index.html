@@ -19,55 +19,64 @@
     <h1>Constantine</h1>
     <p class="title">Web Developer / Game Developer</p>
 
-    <section>
-      <h2>Contact</h2>
-      <ul>
-        <li>Email: <a href="mailto:kostalampadaris@gmail.com">kostalampadaris@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/Constantinedr" target="_blank">github.com/Constantinedr</a></li>
-        <li>Phone: <a>30+6989767167</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill"><i class="fab fa-js-square"></i><span>JavaScript / Node.js</span></div>
-        <div class="skill"><i class="fab fa-react"></i><span>React</span></div>
-        <div class="skill"><i class="fab fa-python"></i><span>Python / Flask</span></div>
-        <div class="skill"><i class="fas fa-database"></i><span>MongoDB / SQL</span></div>
-        <div class="skill"><i class="fas fa-gamepad"></i><span>Unity / Godot</span></div>
-        <div class="skill"><i class="fas fa-code"></i><span>C# / C++</span></div>
+    <section class="collapsible">
+      <h2><button class="toggle-button">Contact <i class="fas fa-chevron-down"></i></button></h2>
+      <div class="section-content">
+        <ul>
+          <li>Email: <a href="mailto:kostalampadaris@gmail.com">kostalampadaris@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/Constantinedr" target="_blank">github.com/Constantinedr</a></li>
+          <li>Phone: <a>30+6989767167</a></li>
+        </ul>
       </div>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <a href="https://ai-note-summarizer.netlify.app" target="_blank" class="project-link">
-        <div class="project">
-          <h3>Mary ai</h3>
-          <p>An artificial intelligence made and optimized to be able to short paragraphs into small sentences!</p>
-          <div class="project-details">
-            <p><strong>Languages:</strong> <i class="fab fa-react"></i> <i class="fab fa-js-square"></i> <i class="fa-brands fa-css3"></i></p>
-            <img src="images\Screenshot 2025-06-02 181010.png" alt="Mary AI Project Screenshot" class="project-image">
-          </div>
+    <section class="collapsible">
+      <h2><button class="toggle-button">Skills <i class="fas fa-chevron-down"></i></button></h2>
+      <div class="section-content">
+        <div class="skills-grid">
+          <div class="skill"><i class="fab fa-js-square"></i><span>JavaScript / Node.js</span></div>
+          <div class="skill"><i class="fab fa-react"></i><span>React</span></div>
+          <div class="skill"><i class="fab fa-python"></i><span>Python / Flask</span></div>
+          <div class="skill"><i class="fas fa-database"></i><span>MongoDB / SQL</span></div>
+          <div class="skill"><i class="fas fa-gamepad"></i><span>Unity / Godot</span></div>
+          <div class="skill"><i class="fas fa-code"></i><span>C# / C++</span></div>
         </div>
-      </a>
-      <a href="https://constantinedr.github.io/chicken-game/" target="_blank" class="project-link">
-        <div class="project">
-          <h3>Chicken Crossing The Road</h3>
-          <p>A classic 3d video game with unique assets and endless repeatability! Also compatible with phones</p>
-          <div class="project-details">
-            <p><strong>Languages:</strong> <i class="fa fa-csharp" ></i><i></i>Unity</p>
-            <img src="path/to/another-project-image.jpg" alt="Another Project Screenshot" class="project-image">
-          </div>
-        </div>
-      </a>
+      </div>
     </section>
 
-    <section>
-      <h2>Education</h2>
-      <p><strong></strong></p>
+    <section class="collapsible">
+      <h2><button class="toggle-button">Projects <i class="fas fa-chevron-down"></i></button></h2>
+      <div class="section-content">
+        <a href="https://ai-note-summarizer.netlify.app" target="_blank" class="project-link">
+          <div class="project">
+            <h3>Mary ai</h3>
+            <p>An artificial intelligence made and optimized to be able to short paragraphs into small sentences!</p>
+            <div class="project-details">
+              <p><strong>Languages:</strong> <i class="fab fa-react"></i> <i class="fab fa-js-square"></i> <i class="fa-brands fa-css3"></i></p>
+              <img src="images/Screenshot 2025-06-02 181010.png" alt="Mary AI Project Screenshot" class="project-image">
+            </div>
+          </div>
+        </a>
+        <a href="https://constantinedr.github.io/chicken-game/" target="_blank" class="project-link">
+          <div class="project">
+            <h3>Chicken Crossing The Road</h3>
+            <p>A classic 3d video game with unique assets and endless repeatability! Also compatible with phones</p>
+            <div class="project-details">
+              <p><strong>Languages:</strong> <i class="fas fa-code"></i><span>C#</span> <span>Unity</span></p>
+              <img src="path/to/another-project-image.jpg" alt="Another Project Screenshot" class="project-image">
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="collapsible">
+      <h2><button class="toggle-button">Education <i class="fas fa-chevron-down"></i></button></h2>
+      <div class="section-content">
+        <p><strong></strong></p>
+      </div>
     </section>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
