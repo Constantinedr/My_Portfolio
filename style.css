@@ -90,6 +90,12 @@ a:hover {
   color: #c9d1d9;
 }
 
+.project-details i {
+  font-size: 1.5rem;
+  color: #58a6ff;
+  margin: 0 0.5rem;
+}
+
 .project-image {
   max-width: 100%;
   height: auto;
@@ -121,7 +127,7 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .skills-grid {
     grid-template-columns: 1fr;
   }
