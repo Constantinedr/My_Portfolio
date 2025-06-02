@@ -153,22 +153,24 @@ a:hover {
   opacity: 0;
 }
 section.collapsible:nth-child(3) .section-content {
-  max-height: 300px;
-  overflow-y: auto;
+  max-height: 200px;
+  min-height: 100px;
+  overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: #58a6ff #21262d;
-  padding-right: 10px;
+  padding-right: 12px;
   box-sizing: border-box;
 }
 section.collapsible:nth-child(3) .section-content::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 section.collapsible:nth-child(3) .section-content::-webkit-scrollbar-track {
   background: #21262d;
+  border-radius: 5px;
 }
 section.collapsible:nth-child(3) .section-content::-webkit-scrollbar-thumb {
   background: #58a6ff;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 section.collapsible:nth-child(3) .section-content.collapsed {
   max-height: 0;
@@ -208,10 +210,11 @@ section.collapsible:nth-child(3) .section-content.collapsed {
     grid-template-columns: 1fr;
   }
   section.collapsible:nth-child(3) .section-content {
-    max-height: 200px;
-    padding-right: 8px;
+    max-height: 150px;
+    min-height: 80px;
+    padding-right: 10px;
   }
   section.collapsible:nth-child(3) .section-content::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
   }
 }

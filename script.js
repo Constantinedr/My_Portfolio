@@ -15,10 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
   const projectToggleButtons = document.querySelectorAll('.project-toggle-button');
   projectToggleButtons.forEach(button => {
     button.addEventListener('click', (event) => {
-      event.preventDefault(); 
+      event.preventDefault();
       const projectContent = button.closest('.project').querySelector('.project-content');
       const icon = button.querySelector('i');
       
