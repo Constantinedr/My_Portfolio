@@ -1,48 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name - Resume</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="container">
-    <h1>Your Name</h1>
-    <p class="title">Job Title or Specialty</p>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #0d1117;
+  margin: 0;
+  padding: 2rem;
+  color: #c9d1d9;
+}
 
-    <section>
-      <h2>Contact</h2>
-      <ul>
-        <li>Email: your.email@example.com</li>
-        <li>Website: yourwebsite.com</li>
-        <li>GitHub: github.com/yourusername</li>
-      </ul>
-    </section>
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #161b22;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.2);
+  border: 1px solid #30363d;
+}
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>JavaScript, React, Node.js</li>
-        <li>Python, Flask</li>
-        <li>MongoDB, SQL</li>
-      </ul>
-    </section>
+h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  color: #58a6ff;
+  border-bottom: 2px solid #30363d;
+  padding-bottom: 0.5rem;
+}
 
-    <section>
-      <h2>Experience</h2>
-      <h3>Job Title – Company</h3>
-      <p><em>Jan 2022 – Present</em></p>
-      <ul>
-        <li>Did something awesome</li>
-        <li>Improved some metric</li>
-      </ul>
-    </section>
+.title {
+  font-style: italic;
+  color: #8b949e;
+  margin-bottom: 1.5rem;
+}
 
-    <section>
-      <h2>Education</h2>
-      <p><strong>University Name</strong>, Degree (2018–2022)</p>
-    </section>
-  </div>
-</body>
-</html>
+h2 {
+  color: #58a6ff;
+  margin-top: 2rem;
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  color: #79c0ff;
+  margin-bottom: 0.2rem;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.project {
+  background: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
