@@ -41,7 +41,11 @@ h3 {
   font-size: 1.3rem;
   color: #79c0ff;
   margin-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .title {
   font-style: italic;
   color: #8b949e;
@@ -160,7 +164,7 @@ a:hover {
 }
 
 .section-content {
-  max-height: 1000px; /* Arbitrary large value for initial state */
+  max-height: 1000px;
   overflow: hidden;
   transition: max-height 0.3s ease, opacity 0.3s ease;
   opacity: 1;
@@ -171,7 +175,36 @@ a:hover {
   opacity: 0;
 }
 
-@media (max-width: 600px) {
+.project-toggle-button {
+  background: none;
+  border: none;
+  color: #58a6ff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.project-toggle-button i {
+  transition: transform 0.3s ease;
+}
+
+.project-toggle-button.collapsed i {
+  transform: rotate(-90deg);
+}
+
+.project-content {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.project-content.collapsed {
+  max-height: 0;
+  opacity: 0;
+}
+
+@media (max-width: 400px) {
   .skills-grid {
     grid-template-columns: 1fr;
   }
