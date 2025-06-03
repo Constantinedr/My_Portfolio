@@ -202,3 +202,20 @@ section.collapsible:nth-child(3) .section-content.collapsed {
     padding-right: 10px;
   }
 }
+body {
+  background: linear-gradient(-45deg, #0d1117, #161b22, #1f2937, #0d1117);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
