@@ -5,109 +5,182 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Βιογραφικό του Κωνσταντίνου Λαμπαδάρη">
   <title>Το Βιογραφικό μου</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 12pt;
+      line-height: 1.5;
+      color: #000000;
+      background: #ffffff;
+      padding: 1in;
+    }
+
+    .container {
+      max-width: 8.5in;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 18pt;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0.25in;
+      border-bottom: 2px solid #000000;
+      padding-bottom: 0.1in;
+    }
+
+    .title {
+      font-size: 12pt;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 0.5in;
+    }
+
+    h2 {
+      font-size: 14pt;
+      font-weight: bold;
+      margin-top: 0.5in;
+      margin-bottom: 0.25in;
+      border-bottom: 1px solid #000000;
+      padding-bottom: 0.05in;
+    }
+
+    ul {
+      margin-left: 0.5in;
+      margin-bottom: 0.25in;
+    }
+
+    ul li {
+      margin-bottom: 0.15in;
+    }
+
+    .contact-list li {
+      list-style: none;
+      margin-left: 0;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5in;
+      list-style: none;
+      margin-left: 0;
+    }
+
+    .skills-list li {
+      margin-bottom: 0;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>Κωνσταντίνος Λαμπαδάρης</h1>
     <p class="title">Web Designer / Game Designer</p>
 
-    <section class="collapsible">
-      <h2><button class="toggle-button">Επικοινωνία <i class="fas fa-chevron-down"></i></button></h2>
-      <div class="section-content">
-        <ul>
-          <li>Email: <a href="mailto:kostalampadaris@gmail.com">kostalampadaris@gmail.com</a></li>
-          <li>GitHub: <a href="https://github.com/Constantinedr" target="_blank">github.com/Constantinedr</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/in/constantine-lampadaris-829794281/" target="_blank">linkedin.com/in/constantine</a></li>
-          <li>My Portfolio: <a href="https://constantinedr.github.io/My_Portfolio/" target="_blank">My Portfolio</a></li>
-          <li>Phone: <a>+30 6989767167</a></li>
-        </ul>
-      </div>
-    </section>
-    <section class="collapsible">
-      <h2><button class="toggle-button">Δεξιότητες <i class="fas fa-chevron-down"></i></button></h2>
-      <div class="section-content">
-        <div class="skills-grid">
-          <div class="skill"><i class="fab fa-js-square"></i><span>JavaScript / Node.js</span></div>
-          <div class="skill"><i class="fab fa-react"></i><span>React</span></div>
-          <div class="skill"><i class="fab fa-python"></i><span>Python / Flask</span></div>
-          <div class="skill"><i class="fas fa-database"></i><span>MongoDB / SQL</span></div>
-          <div class="skill"><i class="fas fa-gamepad"></i><span>Unity / Godot / Unreal</span></div>
-          <div class="skill"><i class="fas fa-code"></i><span>C# / C++</span></div>
-          <div class="skill"><i class="fab fa-css3-alt"></i><span>CSS / HTML</span></div>
-          <div class="skill"><i class="fab fa-php"></i><span>PHP</span></div>
-        </div>
-      </div>
-    </section>
-    <section class="collapsible">
-      <h2><button class="toggle-button">Εκπαίδευση <i class="fas fa-chevron-down"></i></button></h2>
-      <div class="section-content">
-        <ul>
-          <li>
-            <strong>Σχεδιασμός/Προγραμματισμός Ιστοσελίδων, ΙΕΚ ΔΕΛΤΑ 360</strong><br>
-            Οκτώβριος 2023 - Παρόν<br>
-            Επαγγελματική κατάρτιση στον σχεδιασμό και την ανάπτυξη ιστοσελίδων.
-          </li>
-          <li>
-            <strong>Σχεδιασμός/Προγραμματισμός Ιστοσελίδων, Training Qualifications UK</strong><br>
-            Οκτώβριος 2024 - Παρόν<br>
-            Συνεχιζόμενη επαγγελματική κατάρτιση στον σχεδιασμό και την ανάπτυξη ιστοσελίδων.
-          </li>
-          <li>
-            <strong>Απόφοιτος Λυκείου, Γενικό Λύκειο Καρπενησίου</strong><br>
-            Σεπτέμβριος 2020 - Ιούνιος 2023<br>
-            Απολυτήριο Λυκείου με έμφαση στη γενική εκπαίδευση.
-          </li>
-          <li>
-            <strong>AI Masterclass: Δημιουργία Περιεχομένου με Τεχνητή Νοημοσύνη, ΙΕΚ ΔΕΛΤΑ 360</strong><br>
-            Φεβρουάριος 2024<br>
-            Κατάρτιση στη δημιουργία περιεχομένου με χρήση εργαλείων τεχνητής νοημοσύνης.
-          </li>
-          <li>
-            <strong>Πράσινες Δεξιότητες, ΔΥΠΑ</strong><br>
-            Ιούνιος 2024 - Οκτώβριος 2024<br>
-            Πρόγραμμα ανάπτυξης δεξιοτήτων για τη βιώσιμη και πράσινη ανάπτυξη.
-          </li>
-          <li>
-            <strong>Πιστοποίηση Αγγλικής Γλώσσας - Επίπεδο C2</strong><br>
-            Πιστοποίηση που αποδεικνύει προχωρημένο επίπεδο γνώσης της Αγγλικής.
-          </li>
-          <li>
-            <strong>ECDL</strong><br>
-            Πιστοποίηση βασικών δεξιοτήτων πληροφορικής και χρήσης λογισμικού.
-          </li>
-        </ul>
-      </div>
+    <section>
+      <h2>Επικοινωνία</h2>
+      <ul class="contact-list">
+        <li>Email: <a href="mailto:kostalampadaris@gmail.com">kostalampadaris@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/Constantinedr" target="_blank">github.com/Constantinedr</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/constantine-lampadaris-829794281/" target="_blank">linkedin.com/in/constantine</a></li>
+        <li>My Portfolio: <a href="https://constantinedr.github.io/My_Portfolio/" target="_blank">My Portfolio</a></li>
+        <li>Phone: <a href="tel:+306989767167">+30 6989767167</a></li>
+      </ul>
     </section>
 
+    <section>
+      <h2>Δεξιότητες</h2>
+      <ul class="skills-list">
+        <li>JavaScript / Node.js</li>
+        <li>React</li>
+        <li>Python / Flask</li>
+        <li>MongoDB / SQL</li>
+        <li>Unity / Godot / Unreal</li>
+        <li>C# / C++</li>
+        <li>CSS / HTML</li>
+        <li>PHP</li>
+      </ul>
+    </section>
 
+    <section>
+      <h2>Εκπαίδευση</h2>
+      <ul>
+        <li>
+          <strong>Σχεδιασμός/Προγραμματισμός Ιστοσελίδων, ΙΕΚ ΔΕΛΤΑ 360</strong><br>
+          Οκτώβριος 2023 - Παρόν<br>
+          Επαγγελματική κατάρτιση στον σχεδιασμό και την ανάπτυξη ιστοσελίδων.
+        </li>
+        <li>
+          <strong>Σχεδιασμός/Προγραμματισμός Ιστοσελίδων, Training Qualifications UK</strong><br>
+          Οκτώβριος 2024 - Παρόν<br>
+          Συνεχιζόμενη επαγγελματική κατάρτιση στον σχεδιασμό και την ανάπτυξη ιστοσελίδων.
+        </li>
+        <li>
+          <strong>Απόφοιτος Λυκείου, Γενικό Λύκειο Καρπενησίου</strong><br>
+          Σεπτέμβριος 2020 - Ιούνιος 2023<br>
+          Απολυτήριο Λυκείου με έμφαση στη γενική εκπαίδευση.
+        </li>
+        <li>
+          <strong>AI Masterclass: Δημιουργία Περιεχομένου με Τεχνητή Νοημοσύνη, ΙΕΚ ΔΕΛΤΑ 360</strong><br>
+          Φεβρουάριος 2024<br>
+          Κατάρτιση στη δημιουργία περιεχομένου με χρήση εργαλείων τεχνητής νοημοσύνης.
+        </li>
+        <li>
+          <strong>Πράσινες Δεξιότητες, ΔΥΠΑ</strong><br>
+          Ιούνιος 2024 - Οκτώβριος 2024<br>
+          Πρόγραμμα ανάπτυξης δεξιοτήτων για τη βιώσιμη και πράσινη ανάπτυξη.
+        </li>
+        <li>
+          <strong>Πιστοποίηση Αγγλικής Γλώσσας - Επίπεδο C2</strong><br>
+          Πιστοποίηση που αποδεικνύει προχωρημένο επίπεδο γνώσης της Αγγλικής.
+        </li>
+        <li>
+          <strong>ECDL</strong><br>
+          Πιστοποίηση βασικών δεξιοτήτων πληροφορικής και χρήσης λογισμικού.
+        </li>
+      </ul>
+    </section>
 
-    <section class="collapsible">
-      <h2><button class="toggle-button">Επαγγελματική Εμπειρία <i class="fas fa-chevron-down"></i></button></h2>
-      <div class="section-content">
-        <ul>
-          <li>
-            <strong>Κηπουρός</strong><br>
-            Ιανουάριος 2025 - Παρόν<br>
-            Ασχολία με τη συντήρηση και αισθητική διαμόρφωση εξωτερικών χώρων, όπως κήποι, αυλές και παρτέρια. Το έργο περιλαμβάνει κλάδεμα φυτών, φροντίδα γκαζόν, καθαρισμό και βασικές τεχνικές μικροεπισκευές. Επιπλέον απαιτεί αυτονομία και συνέπεια στην εξυπηρέτηση διαφορετικών πελατών με βάση τις ανάγκες τους.
-          </li>
-          <li>
-            <strong>Βοηθός Σταδίου</strong><br>
-            Ιούνιος 2024 - Αύγουστος 2024 <br>
-            Υποστήριξη στη διοργάνωση και λειτουργία αθλητικών εκδηλώσεων. Καθήκοντα περιλάμβαναν την προετοιμασία των αθλημάτων, καθοδήγηση επισκεπτών, παροχή πληροφοριών, έλεγχο και διασφάλιση ομαλής ροής κατά τη διάρκεια της εκδήλωσης.
-          </li>
-        </ul>
-      </div>
+    <section>
+      <h2>Επαγγελματική Εμπειρία</h2>
+      <ul>
+        <li>
+          <strong>Κηπουρός</strong><br>
+          Ιανουάριος 2025 - Παρόν<br>
+          Ασχολία με τη συντήρηση και αισθητική διαμόρφωση εξωτερικών χώρων, όπως κήποι, αυλές και παρτέρια. Το έργο περιλαμβάνει κλάδεμα φυτών, φροντίδα γκαζόν, καθαρισμό και βασικές τεχνικές μικροεπισκευές. Επιπλέον απαιτεί αυτονομία και συνέπεια στην εξυπηρέτηση διαφορετικών πελατών με βάση τις ανάγκες τους.
+        </li>
+        <li>
+          <strong>Βοηθός Σταδίου</strong><br>
+          Ιούνιος 2024 - Αύγουστος 2024<br>
+          Υποστήριξη στη διοργάνωση και λειτουργία αθλητικών εκδηλώσεων. Καθήκοντα περιλάμβαναν την προετοιμασία των αθλημάτων, καθοδήγηση επισκεπτών, παροχή πληροφοριών, έλεγχο και διασφάλιση ομαλής ροής κατά τη διάρκεια της εκδήλωσης.
+        </li>
+      </ul>
     </section>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
