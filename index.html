@@ -4,206 +4,174 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Βιογραφικό του Κωνσταντίνου Λαμπαδάρη">
-  <title>Το Βιογραφικό μου</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 12pt;
-      line-height: 1.5;
-      color: #000000;
-      background: #ffffff;
-      padding: 1in;
-    }
-
-    .container {
-      max-width: 8.5in;
-      margin: 0 auto;
-    }
-
-    h1 {
-      font-size: 18pt;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 0.25in;
-      border-bottom: 2px solid #000000;
-      padding-bottom: 0.1in;
-    }
-
-    .title {
-      font-size: 12pt;
-      font-style: italic;
-      text-align: center;
-      margin-bottom: 0.5in;
-    }
-
-    h2 {
-      font-size: 14pt;
-      font-weight: bold;
-      margin-top: 0.5in;
-      margin-bottom: 0.25in;
-      border-bottom: 1px solid #000000;
-      padding-bottom: 0.05in;
-    }
-
-    ul {
-      margin-left: 0.5in;
-      margin-bottom: 0.25in;
-    }
-
-    ul li {
-      margin-bottom: 0.15in;
-    }
-
-    .contact-list li {
-      list-style: none;
-      margin-left: 0;
-    }
-
-    .skills-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5in;
-      list-style: none;
-      margin-left: 0;
-    }
-
-    .skills-list li {
-      margin-bottom: 0;
-    }
-
-    .additional-skills-list {
-      list-style: none;
-      margin-left: 0;
-    }
-
-    strong {
-      font-weight: bold;
-    }
-
-    a {
-      color: #000000;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @media print {
-      body {
-        padding: 0;
-      }
-    }
-  </style>
+  <title>portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 </head>
 <body>
   <div class="container">
     <h1>Κωνσταντίνος Λαμπαδάρης</h1>
     <p class="title">Web Designer / Game Designer</p>
 
-    <section>
-      <h2>Επικοινωνία</h2>
-      <ul class="contact-list">
-        <li>Email: <a href="mailto:kostalampadaris@gmail.com">kostalampadaris@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/Constantinedr" target="_blank">github.com/Constantinedr</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/constantine-lampadaris-829794281/" target="_blank">linkedin.com/in/constantine</a></li>
-        <li>My Portfolio: <a href="https://constantinedr.github.io/My_Portfolio/" target="_blank">My Portfolio</a></li>
-        <li>Phone: <a href="tel:+306989767167">+30 6989767167</a></li>
-      </ul>
+    <section class="collapsible">
+      <h2><button class="toggle-button">Επικοινωνία <i class="fas fa-chevron-down"></i></button></h2>
+      <div class="section-content">
+        <ul>
+          <li>Email: <a href="mailto:kostalampadaris@gmail.com">kostalampadaris@gmail.com</a></li>
+          <li>GitHub: <a href="https://github.com/Constantinedr" target="_blank">github.com/Constantinedr</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/constantine-lampadaris-829794281/" target="_blank">linkedin.com/in/constantine</a></li>
+          <li>Phone: <a>+30 6989767167</a></li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>Δεξιότητες</h2>
-      <ul class="skills-list">
-        <li>JavaScript / Node.js</li>
-        <li>React</li>
-        <li>Python / Flask</li>
-        <li>MongoDB / SQL</li>
-        <li>Unity / Godot / Unreal</li>
-        <li>C# / C++</li>
-        <li>CSS / HTML</li>
-        <li>PHP</li>
-      </ul>
+
+    <section class="collapsible">
+      <h2><button class="toggle-button">Δεξιότητες <i class="fas fa-chevron-down"></i></button></h2>
+      <div class="section-content">
+        <div class="skills-grid">
+          <div class="skill"><i class="fab fa-js-square"></i><span>JavaScript / Node.js</span></div>
+          <div class="skill"><i class="fab fa-react"></i><span>React</span></div>
+          <div class="skill"><i class="fab fa-python"></i><span>Python / Flask</span></div>
+          <div class="skill"><i class="fas fa-database"></i><span>MongoDB / SQL</span></div>
+          <div class="skill"><i class="fas fa-gamepad"></i><span>Unity / Godot / Unreal</span></div>
+          <div class="skill"><i class="fas fa-code"></i><span>C# / C++</span></div>
+          <div class="skill"><i class="fab fa-css3-alt"></i><span>CSS / HTML</span></div>
+          <div class="skill"><i class="fab fa-php"></i><span>PHP</span></div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Εκπαίδευση</h2>
-      <ul>
-        <li>
-          <strong>Σχεδιασμός/Προγραμματισμός Ιστοσελίδων, ΙΕΚ ΔΕΛΤΑ 360</strong><br>
-          Οκτώβριος 2023 - Παρόν<br>
-          Επαγγελματική κατάρτιση στον σχεδιασμό και την ανάπτυξη ιστοσελίδων.
-        </li>
-        <li>
-          <strong>Σχεδιασμός/Προγραμματισμός Ιστοσελίδων, Training Qualifications UK</strong><br>
-          Οκτώβριος 2024 - Παρόν<br>
-          Συνεχιζόμενη επαγγελματική κατάρτιση στον σχεδιασμό και την ανάπτυξη ιστοσελίδων.
-        </li>
-        <li>
-          <strong>Απόφοιτος Λυκείου, Γενικό Λύκειο Καρπενησίου</strong><br>
-          Σεπτέμβριος 2020 - Ιούνιος 2023<br>
-          Απολυτήριο Λυκείου με έμφαση στη γενική εκπαίδευση.
-        </li>
-        <li>
-          <strong>AI Masterclass: Δημιουργία Περιεχομένου με Τεχνητή Νοημοσύνη, ΙΕΚ ΔΕΛΤΑ 360</strong><br>
-          Φεβρουάριος 2024<br>
-          Κατάρτιση στη δημιουργία περιεχομένου με χρήση εργαλείων τεχνητής νοημοσύνης.
-        </li>
-        <li>
-          <strong>Πράσινες Δεξιότητες, ΔΥΠΑ</strong><br>
-          Ιούνιος 2024 - Οκτώβριος 2024<br>
-          Πρόγραμμα ανάπτυξης δεξιοτήτων για τη βιώσιμη και πράσινη ανάπτυξη.
-        </li>
-        <li>
-          <strong>Πιστοποίηση Αγγλικής Γλώσσας - Επίπεδο C2</strong><br>
-          Πιστοποίηση που αποδεικνύει προχωρημένο επίπεδο γνώσης της Αγγλικής.
-        </li>
-        <li>
-          <strong>ECDL</strong><br>
-          Πιστοποίηση βασικών δεξιοτήτων πληροφορικής και χρήσης λογισμικού.
-        </li>
-      </ul>
+    <section class="collapsible">
+      <h2><button class="toggle-button">Επαγγελματική Εμπειρία <i class="fas fa-chevron-down"></i></button></h2>
+      <div class="section-content">
+        <ul>
+          <li>
+            <strong>Κηπουρός</strong><br>
+            Ιανουάριος 2025 - Παρόν<br>
+            Αυτοαπασχολούμενος κηπουρός – διαχείριση χρόνου και πελατών.
+          </li>
+          <li>
+            <strong>Βοηθός Σταδίου</strong><br>
+            Ιούνιος 2024 - Σεπτέμβριος 2024<br>
+            Εργασία σε ομαδικό περιβάλλον που ενίσχυσε τις δεξιότητες συνεργασίας.
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section>
-      <h2>Επαγγελματική Εμπειρία</h2>
-      <ul>
-        <li>
-          <strong>Κηπουρός</strong><br>
-          Ιανουάριος 2025 - Παρόν<br>
-          <ul>
-            <li>Συντήρηση και αισθητική διαμόρφωση εξωτερικών χώρων, όπως κήποι, αυλές και παρτέρια.</li>
-            <li>Κλάδεμα φυτών, φροντίδα γκαζόν και καθαρισμός εξωτερικών χώρων.</li>
-            <li>Εκτέλεση βασικών τεχνικών μικροεπισκευών.</li>
-            <li>Εξυπηρέτηση διαφορετικών πελατών με αυτονομία και συνέπεια, προσαρμοζόμενος στις ανάγκες τους.</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Βοηθός Σταδίου</strong><br>
-          Ιούνιος 2024 - Αύγουστος 2024<br>
-          <ul>
-            <li>Υποστήριξη στη διοργάνωση και λειτουργία αθλητικών εκδηλώσεων.</li>
-            <li>Προετοιμασία των αθλημάτων και καθοδήγηση επισκεπτών.</li>
-            <li>Παροχή πληροφοριών και έλεγχος για τη διασφάλιση ομαλής ροής κατά τη διάρκεια των εκδηλώσεων.</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+    <section class="collapsible">
+      <h2><button class="toggle-button">Έργα <i class="fas fa-chevron-down"></i></button></h2>
+      <div class="section-content">
 
-    <section>
-      <h2>Πρόσθετες Δεξιότητες</h2>
-      <ul class="additional-skills-list">
-        <li><strong>Programming & Development:</strong> Git, REST APIs, Webpack, JSON</li>
-        <li><strong>Concepts:</strong> Agile Methodologies, UI/UX Design Principles, Version Control</li>
-        <li><strong>Other:</strong>Ομαδική Συνεργασία, Επίλυση Προβλημάτων, Διαχείριση Χρόνου</li>
-      </ul>
+        <!-- Project: DataLock -->
+        <a href="https://github.com/Constantinedr/ai-note-summarizer/blob/master/server.js" target="_blank" class="project-link">
+          <div class="project">
+            <h3>DataLock <button class="project-toggle-button"><i class="fas fa-chevron-down"></i></button></h3>
+            <div class="project-content collapsed">
+              <p>Ένα ισχυρό backend σύστημα για εγγραφή και αυθεντικοποίηση χρηστών, συνδεδεμένο με ασφαλή και επεκτάσιμη βάση δεδομένων για τη διαχείριση μεταβλητών.</p>
+              <div class="project-details">
+                <p><strong>Γλώσσες:</strong> JavaScript, Node.js, MongoDB, CSS</p>
+                <img src="images/Screenshot 2025-06-02 210153.png" alt="DataLock Project Screenshot" class="project-image">
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project: Moulder -->
+        <a href="https://www.youtube.com/@synthetic_throne_studios/videos" target="_blank" class="project-link">
+          <div class="project">
+            <h3>Moulder <button class="project-toggle-button"><i class="fas fa-chevron-down"></i></button></h3>
+            <div class="project-content collapsed">
+              <p>Ένα 3D παιχνίδι το οποίο Δημιουργώ μαζι με φίλους μου, εμπνευσμένο από τα Pikmin και Monster Hunter Worlds με έμφαση στη γρήγορη κίνηση και ρευστότητα.</p>
+              <div class="project-details">
+                <p><strong>Γλώσσες:</strong> Python</p>
+                <img src="images/2ac16a7d3e992c3988a72d3832ee7df3.webp" alt="Moulder Project Screenshot" class="project-image">
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project: Mary AI -->
+        <a href="https://ai-note-summarizer.netlify.app" target="_blank" class="project-link">
+          <div class="project">
+            <h3>Mary AI <button class="project-toggle-button"><i class="fas fa-chevron-down"></i></button></h3>
+            <div class="project-content collapsed">
+              <p>Μια τεχνητή νοημοσύνη για την περίληψη παραγράφων σε μικρές και απλές προτάσεις.</p>
+              <div class="project-details">
+                <p><strong>Γλώσσες:</strong> React, JavaScript, CSS</p>
+                <img src="images/Screenshot 2025-06-02 181010.png" alt="Mary AI Project Screenshot" class="project-image">
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project: Chicken Crossing The Road -->
+        <a href="https://constantinedr.github.io/chicken-game/" target="_blank" class="project-link">
+          <div class="project">
+            <h3>Chicken Crossing The Road <button class="project-toggle-button"><i class="fas fa-chevron-down"></i></button></h3>
+            <div class="project-content collapsed">
+              <p>Ένα 3D παιχνίδι με δικα του γραφικά και ατελείωτη επανάληψη – συμβατό και με κινητά.</p>
+              <div class="project-details">
+                <p><strong>Γλώσσες:</strong> C#, Unity</p>
+                <img src="path/to/another-project-image.jpg" alt="Chicken Crossing The Road Screenshot" class="project-image">
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project: Torn -->
+        <a href="https://ai-note-summarizer.netlify.app/Torn-game" target="_blank" class="project-link">
+          <div class="project">
+          <h3>Torn <button class="project-toggle-button"><i class="fas fa-chevron-down"></i></button></h3>
+            <div class="project-content collapsed">
+              <p>Ένα μικρό 2D rogue-like παιχνίδι με προοδευτική δυσκολία και πολλούς διάφορετικους εχθρούς.</p>
+              <div class="project-details">
+                <p><strong>Γλώσσες:</strong> C#, Unity</p>
+                <img src="images/torn (1).png" alt="Torn Project Screenshot" class="project-image">
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project: AI Tic Tac Toe -->
+        <a href="https://ai-note-summarizer.netlify.app/TicTacToe-game" target="_blank" class="project-link">
+          <div class="project">
+            <h3>AI Tic Tac Toe <button class="project-toggle-button"><i class="fas fa-chevron-down"></i></button></h3>
+            <div class="project-content collapsed">
+              <p>Κλασικό παιχνίδι τρίλιζας με τεχνητή νοημοσύνη.</p>
+              <div class="project-details">
+                <p><strong>Γλώσσες:</strong> React, JavaScript, CSS</p>
+                <img src="images/peak.png" alt="AI Tic Tac Toe Project Screenshot" class="project-image">
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Project: RGB Controller -->
+        <a href="https://ai-note-summarizer.netlify.app/rgb-component" target="_blank" class="project-link">
+          <div class="project">
+            <h3>RGB Controller/Mini Game <button class="project-toggle-button"><i class="fas fa-chevron-down"></i></button></h3>
+            <div class="project-content collapsed">
+              <p>Ένα εργαλείο επιλογής χρωμάτων RGB και ένα διασκεδαστικό παιχνίδι με χρωματικές εικασίες!</p>
+              <div class="project-details">
+                <p><strong>Γλώσσες:</strong> React, JavaScript, CSS</p>
+                <img src="images/Screenshot 2025-06-02 201903.png" alt="RGB Controller Project Screenshot" class="project-image">
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
     </section>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
