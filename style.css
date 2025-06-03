@@ -96,10 +96,12 @@ a:hover {
   margin: 0 0.5rem;
 }
 .project-image {
-  max-width: 100%;
-  height: auto;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
   border-radius: 5px;
-  margin-top: 0.5rem;
   border: 1px solid #30363d;
 }
 .skills-grid {
@@ -152,14 +154,14 @@ a:hover {
   max-height: 0;
   opacity: 0;
 }
-section.collapsible:nth-child(3) .section-content {
+section.collapsible:nth-child(5) .section-content {
   max-height: 200px;
   min-height: 1px;
   overflow-y: hidden;
   padding-right: 12px;
   box-sizing: border-box;
 }
-section.collapsible:nth-child(3) .section-content.collapsed {
+section.collapsible:nth-child(5) .section-content.collapsed {
   max-height: 0;
   overflow-y: hidden;
 }
@@ -196,9 +198,13 @@ section.collapsible:nth-child(3) .section-content.collapsed {
   .skills-grid {
     grid-template-columns: 1fr;
   }
-  section.collapsible:nth-child(3) .section-content {
+  section.collapsible:nth-child(5) .section-content {
     max-height: 150px;
     min-height: 80px;
     padding-right: 10px;
+  }
+  .project-image {
+    width: 250px;
+    height: 150px;
   }
 }
